@@ -12,7 +12,10 @@
             "renderer": {
                 "method": "js",
                 "arguments": [
-                    { "cache": true },
+                    { 
+                        "cache": true, 
+                        "helpers": [ "./lib/allergic" ] 
+                    },
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",

@@ -5,5 +5,8 @@
     <div id="includes">
     	{>"includes/include1" /}
 	</div>
+	<div id="reaction">
+		{@react one="1" two="2" three=name /}
+	</div>
 
 {/body}
