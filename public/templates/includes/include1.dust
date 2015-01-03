@@ -1,0 +1,2 @@
+<p>Include #1</p>
+{>"includes/include2" /}

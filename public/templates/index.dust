@@ -2,4 +2,8 @@
 
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
+    <div id="includes">
+    	{>"includes/include1" /}
+	</div>
+
 {/body}
