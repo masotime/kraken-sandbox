@@ -5,8 +5,13 @@
     <div id="includes">
     	{>"includes/include1" /}
 	</div>
-	<div id="reaction">
-		{@react one="1" two="2" three=name /}
-	</div>
+	{@react component="textfield" componentId="fruitControl" 
+		id="fruit"
+		value="Pineapple"
+		label="Favorite Fruit"
+		placeholder="e.g. Pineapple"
+		className="paypal-input"
+	/}
+	<div id="ridiculous"></div>
 
 {/body}
