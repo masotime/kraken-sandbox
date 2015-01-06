@@ -1,18 +1,17 @@
 'use strict';
 
-
-var IndexModel = require('../models/index');
-
-
 module.exports = function (router) {
 
-    var model = new IndexModel();
-
-
     router.get('/', function (req, res) {
-        
-        
-        res.render('index', model);
+
+    	// force locality
+    	res.locals.context = {
+    		locality: req.query.locale || 'de-DE'
+    	};
+
+        res.render('index', { name: 'model-name', helpers: [function () {
+        	return 'This is a helper';
+        }] });
         
         
     });

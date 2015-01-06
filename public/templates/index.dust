@@ -3,15 +3,16 @@
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
     <div id="includes">
-    	{>"includes/include1" /}
+    	{! >"includes/include1" /!}
 	</div>
-	{@react component="textfield" componentId="fruitControl" 
+
+	{@react component="textfield" componentId="fruitControl" bundle="index"
 		id="fruit"
 		value="Pineapple"
-		label="Favorite Fruit"
-		placeholder="e.g. Pineapple"
+		label="@field.fruit.label"
+		placeholder="@field.fruit.placeholder"
+		helpers=helpers
 		className="paypal-input"
 	/}
-	<div id="ridiculous"></div>
 
 {/body}

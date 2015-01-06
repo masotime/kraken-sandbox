@@ -14,7 +14,10 @@
                 "arguments": [
                     { 
                         "cache": true, 
-                        "helpers": [ "./lib/allergic" ] 
+                        "helpers": [ { 
+                            "name": "./lib/allergic", 
+                            "arguments": { "enableMetadata": true } } 
+                        ]
                     },
                     {
                         "views": "config:express.views",

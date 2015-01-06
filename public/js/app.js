@@ -15,6 +15,7 @@ require(['react', 'TextField', 'jquery'], function (React, TextField, $) {
     var app = {
         initialize: function () {
 
+            /*
     		var TF = React.createFactory(TextField),
 				fruitControl = document.getElementById('fruitControl');
 
@@ -25,6 +26,7 @@ require(['react', 'TextField', 'jquery'], function (React, TextField, $) {
 				placeholder: 'e.g. Pineapple',
 				className: 'paypal-input'
 			}), fruitControl);
+*/
         }
     };
 
